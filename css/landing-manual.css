@@ -41,6 +41,10 @@ body {
     font-size: 1.1em;
 }
 
+.row {
+    margin: 0;
+}
+
 .container-wide.setup {
     background-color: #F7F7F7;
 }
@@ -112,7 +116,7 @@ ul.top-nav {
 ul.top-nav li {
     display: inline-block;
     padding: 15px 15px;
-    
+
 }
 
 ul.top-nav li a {
