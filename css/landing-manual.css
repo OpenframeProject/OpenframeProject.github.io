@@ -370,6 +370,17 @@ ul.features li.see-more a {
 }
 
 @media (max-width: 767px) {
+
+    ul.top-nav {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .top-nav-wrap {
+        text-align: center;
+        padding-right: 0px
+    }
+
     .row {
         margin-right: 0px;
         margin-left: 0px;
