@@ -14,7 +14,7 @@ fi
 
 openframe_edit_or_add() {
   if grep -q "^$2" $1; then
-    sudo sed -i 's/^$2.*/$2$3/g' $1
+    sed -i 's/^$2.*/$2$3/g' $1
   else
     echo $2$3 >> $1
   fi
