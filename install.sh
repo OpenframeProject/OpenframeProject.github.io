@@ -93,8 +93,12 @@ openframe_do_install() {
   openframe_ask_rotate
 
   echo ""
-  echo "You must restart your shell, or run the following command: source ~/.bashrc"
-  echo "After reloading .bashrc, you can launch the frame by just typing:"
+  echo "If you have changed your display rotation, you must restart the Pi by typing: sudo reboot"
+  echo ""
+  echo "If not, you must run the following command: source ~/.bashrc"
+  echo ""
+  echo "After restarting or reloading .bashrc, you can launch the frame by just typing:"
+  echo ""
   echo "openframe"
 }
 
