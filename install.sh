@@ -1,7 +1,5 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 # Contributed by @quinkennedy (https://gist.github.com/quinkennedy/fc78c2bb1d6b1e27c174)
-
 { # this ensures the entire script is downloaded #
 
 openframe_has() {
