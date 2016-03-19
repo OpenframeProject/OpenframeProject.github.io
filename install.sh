@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-
 # Contributed by @quinkennedy (https://gist.github.com/quinkennedy/fc78c2bb1d6b1e27c174)
-
 { # this ensures the entire script is downloaded #
 
 openframe_has() {
@@ -14,9 +12,9 @@ fi
 
 openframe_edit_or_add() {
   if grep -q "^$2" $1; then
-    sed -i 's/^$2.*/$2$3/g' $1
+    sudo bash -c "sed -i 's/^$2.*/$2$3/g' $1"
   else
-    echo $2$3 >> $1
+    sudo bash -c "echo $2$3 >> $1"
   fi
 }
 
@@ -93,8 +91,12 @@ openframe_do_install() {
   openframe_ask_rotate
 
   echo ""
-  echo "You must restart your shell, or run the following command: source ~/.bashrc"
-  echo "After reloading .bashrc, you can launch the frame by just typing:"
+  echo "If you have changed your display rotation, you must restart the Pi by typing: sudo reboot"
+  echo ""
+  echo "If not, you must run the following command: source ~/.bashrc"
+  echo ""
+  echo "After restarting or reloading .bashrc, you can launch the frame by just typing:"
+  echo ""
   echo "openframe"
 }
 
