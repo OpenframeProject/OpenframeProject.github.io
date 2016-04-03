@@ -74,6 +74,9 @@ openframe_do_install() {
   echo "install node"
   nvm install 4.3
 
+  # disable terminal screen blanking
+  setterm -powersave off -blank 0
+
   # disable screensaver
   echo "install server utils"
   sudo apt-get install x11-xserver-utils
