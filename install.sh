@@ -80,11 +80,13 @@ openframe_do_install() {
   # disable screensaver
   echo "install server utils"
   sudo apt-get install x11-xserver-utils
+  
   echo "disable screensaver"
-  touch ~/.xinitrc
-  openframe_edit_or_add ~/.xinitrc "xset s off"
-  openframe_edit_or_add ~/.xinitrc "xset -dpms"
-  openframe_edit_or_add ~/.xinitrc "xset s noblank"
+  # TODO - this doesn't actually have the desired effect, and breaks startx
+  #touch ~/.xinitrc
+  #openframe_edit_or_add ~/.xinitrc "xset s off"
+  #openframe_edit_or_add ~/.xinitrc "xset -dpms"
+  #openframe_edit_or_add ~/.xinitrc "xset s noblank"
 
   # install Openframe
   echo "install openframe"
