@@ -75,7 +75,7 @@ openframe_do_install() {
   nvm install 4.3
 
   # disable terminal screen blanking
-  setterm -powersave off -blank 0
+  openframe_edit_or_add ~/.bashrc "setterm -powersave off -blank 0"
 
   # disable screensaver
   echo "install server utils"
