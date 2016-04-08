@@ -50,7 +50,7 @@ body {
 }
 
 .container-wide.footer {
-    padding-bottom: 40px;
+    padding-bottom: 32px;
 }
 
 .container-mid {
@@ -203,6 +203,40 @@ section.intro p {
 .btn-get-started:focus {
     background: #333;
     color: white;
+}
+
+.updates-twitter {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.icon-inline {
+    background-image: url('../img/twitter.svg');
+}
+
+.icons-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.twitter-footer {
+    width: 22px;
+    opacity: 0.8;
+    margin-right: 6px;
+}
+
+.github-footer {
+    width: 22px;
+    opacity: 0.8;
+    margin-left: 6px;
+    padding-bottom: 1px;
+}
+
+.follow img {
+    width: 16px;
+    padding-bottom: 4px;
+    margin-right: 3px;
 }
 
 ul.features {
@@ -403,7 +437,7 @@ ul.features li.see-more a {
     }
 
     .container-wide {
-        padding-bottom: 20px;
+        padding-bottom: 26px;
     }
 
     .q-a h5 {
