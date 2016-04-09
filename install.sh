@@ -80,8 +80,8 @@ openframe_do_install() {
   # disable screensaver
   echo "install server utils"
   sudo apt-get install x11-xserver-utils
-  
-  echo "disable screensaver"
+
+  # echo "disable screensaver"
   # TODO - this doesn't actually have the desired effect, and breaks startx
   #touch ~/.xinitrc
   #openframe_edit_or_add ~/.xinitrc "xset s off"
@@ -91,6 +91,11 @@ openframe_do_install() {
   # install Openframe
   echo "install openframe"
   npm install -g openframe
+
+  echo "install default format extensions"
+  npm install -g openframe-image
+  npm install -g openframe-glslviewer
+  npm install -g openframe-website
 
   # interactive prompt for configuration
   openframe_ask_rotate
