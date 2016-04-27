@@ -90,12 +90,12 @@ openframe_do_install() {
 
   # install Openframe
   echo "install openframe"
-  npm install -g openframe
+  npm install -g openframe@latest
 
   echo "install default format extensions"
-  npm install -g openframe-image
-  npm install -g openframe-glslviewer
-  npm install -g openframe-website
+  npm install -g openframe-image@latest
+  npm install -g openframe-glslviewer@latest
+  npm install -g openframe-website@latest
 
   # interactive prompt for configuration
   openframe_ask_rotate
