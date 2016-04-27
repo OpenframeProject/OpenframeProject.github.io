@@ -96,6 +96,7 @@ openframe_do_install() {
   npm install -g openframe-image@latest
   npm install -g openframe-glslviewer@latest
   npm install -g openframe-website@latest
+  npm install -g openframe-video@latest
 
   # interactive prompt for configuration
   openframe_ask_rotate
