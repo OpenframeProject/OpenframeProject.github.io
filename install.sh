@@ -81,6 +81,9 @@ openframe_do_install() {
   echo "install server utils"
   sudo apt-get install x11-xserver-utils
 
+  # let anybody use xinit
+  openframe_edit_or_add /etc/X11/Xwrapper.config "allowed_users" "=anybody"
+
   # echo "disable screensaver"
   # TODO - this doesn't actually have the desired effect, and breaks startx
   #touch ~/.xinitrc
