@@ -64,7 +64,7 @@ openframe_ask_rotate() {
 
 openframe_do_install() {
   # install NVM for easy node version management
-  openframe_download https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
+  openframe_download https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
   # source nvm to access it in the shell
   # usually it is sourced in .bashrc,
   # but we can't reload .bashrc within a script
