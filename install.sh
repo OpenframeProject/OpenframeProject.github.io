@@ -73,6 +73,7 @@ openframe_do_install() {
   # install Node.js 4.3
   echo "install node"
   nvm install 6.9
+  nvm alias default 6.9
 
   # disable terminal screen blanking
   openframe_edit_or_add ~/.bashrc "setterm -powersave off -blank 0"
