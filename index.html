@@ -7,22 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Openframe</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    <link rel='shortcut icon' type='image/x-icon' href='https://openframeproject.github.io/img/favicon.ico' />
-    <link rel="stylesheet" type="text/css" href="https://openframeproject.github.io/vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://openframeproject.github.io/css/landing-manual.css">
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/landing-manual.css">
     <!--<link rel="stylesheet" type="text/css" href="/css/landing-manual.css">-->
 
 </head>
 
 <body>
 
-    <!-- Nav, Page Heading, Preview Image -->
-    <div class="top-nav-wrap">
-        <ul class="top-nav">
-            <li><a href="http://docs.openframe.io/frame-setup-guide">Setup a frame</a></li>
-            <li><a href="https://openframe.io/stream">Explore the web app</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://openframe.io/stream">Artwork stream</a></li>
+              <li><a href="https://docs.openframe.io/">Documentation</a></li>
+              <li><a href="https://openframe.discourse.group/">Forum</a></li>
+              <li><a href="https://github.com/OpenFrameProject">Contribute</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    
+    
     <div class="container-wide">
         <div class="row page-header splash-header">
             <div class="col-md-12">
@@ -211,6 +226,8 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 <!-- Google Analytics -->

@@ -31,6 +31,7 @@ body {
     letter-spacing: normal;
     font-weight: 300;
     font-family: "Lato", sans-serif;
+    padding-top: 70px; 
 }
 
 .container-wide {
@@ -105,29 +106,26 @@ h6 {
     text-align: center;
 }
 
-.top-nav-wrap {
-    padding-right: 20px;
+nav.navbar {
+  border: none;
+  background-color: white;
+  font-weight: 400;
 }
 
-ul.top-nav {
-    text-align: right;
+
+#navbar a {
+  color: #3a3a3a;
+  border: none;
+  padding: 15px 30px;
 }
 
-ul.top-nav li {
-    display: inline-block;
-    padding: 15px 15px;
-
+#navbar a:hover {
+  color: #999;
 }
 
-ul.top-nav li a {
-    display: block;
-    text-decoration: none;
-    border-bottom: none;
-    font-weight: 400;
-}
-
-ul.top-nav li a:hover {
-    color: #999;
+.navbar-toggle {
+  background-color: white;
+  border: none;
 }
 
 .openframe {
@@ -327,6 +325,11 @@ ul.features li.see-more a {
 .q-a a {
     color: #FFF;
     text-align: center;
+    border-bottom-color: #FFF;
+}
+
+.q-a a:hover {
+  color: #999;
 }
 
 .q-a h5 {
@@ -389,9 +392,17 @@ ul.features li.see-more a {
  */
 
 @media (min-width: 768px) {
-    .navbar {
+    /* .navbar {
         border-bottom: 1px solid #777777;
+    } */
+    #navbar {
+      padding: 0px 15px;      
     }
+    
+    #navbar a {
+      padding: 15px 15px;
+    }
+    
     html#Website body .container {
         width: 700px;
     }
@@ -404,16 +415,6 @@ ul.features li.see-more a {
 }
 
 @media (max-width: 767px) {
-
-    ul.top-nav {
-        text-align: center;
-        padding-left: 0px;
-    }
-
-    .top-nav-wrap {
-        text-align: center;
-        padding-right: 0px
-    }
 
     .row {
         margin-right: 0px;
