@@ -7,22 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Openframe</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
-    <link rel='shortcut icon' type='image/x-icon' href='https://openframeproject.github.io/img/favicon.ico' />
-    <link rel="stylesheet" type="text/css" href="https://openframeproject.github.io/vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://openframeproject.github.io/css/landing-manual.css">
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/landing-manual.css">
     <!--<link rel="stylesheet" type="text/css" href="/css/landing-manual.css">-->
 
 </head>
 
 <body>
 
-    <!-- Nav, Page Heading, Preview Image -->
-    <div class="top-nav-wrap">
-        <ul class="top-nav">
-            <li><a href="http://docs.openframe.io/frame-setup-guide">Setup a frame</a></li>
-            <li><a href="https://openframe.io/stream">Explore the web app</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://openframe.io/stream">Artwork stream</a></li>
+              <li><a href="https://docs.openframe.io/">Documentation</a></li>
+              <li><a href="https://openframe.discourse.group/">Forum</a></li>
+              <li><a href="https://github.com/OpenFrameProject">Contribute</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    
+    
     <div class="container-wide">
         <div class="row page-header splash-header">
             <div class="col-md-12">
@@ -178,6 +193,13 @@
                     </section>
 
                     <section>
+                    <h5>Where can I find help?</h5>
+
+                    <p>First, have a look at our <a href="https://docs.openframe.io/">documentation</a> and check if you might find a solution to your problem on the <a href="https://openframe.discourse.group/">forum</a>.</p>
+                    <p>In addition, it might be worth checking if your issue has been described in the <a href="https://github.com/OpenframeProject/Openframe/issues">Openframe for Raspberry Pi</a> and <a href="https://github.com/OpenframeProject/Openframe-WebApp/issues">Openframe Web App</a> issue trackers.</p>
+                    </section>
+
+                    <section>
                     <h5>What artwork can I display?</h5>
 
                     <p>The platform uses 'format' plugins which describe how to run artworks. At present, we'll be releasing plugins for images, video, websites, and shaders, but artists are free to create extensions which can run other types of artwork.</p>
@@ -188,7 +210,7 @@
                     <section>
                     <h5>The installation seems complicated, I just want to buy a frame.</h5>
 
-                    <p>Openframe is not a product. However, there are an ever growing number of existing commercial products that you can buy, plug to the wall, and <em>voilà</em> &mdash; they work. Check out <a href="https://www.electricobjects.com/">Electric Objects</a> or <a href="https://frm.fm/">Framed</a>.</p>
+                    <p>Openframe is not a product. However, there are an ever growing number of existing commercial products that you can buy, plug to the wall, and <em>voilà</em> &mdash; they work. Check out <a href="https://www.electricobjects.com/" target="_blank">Electric Objects</a> or <a href="https://frm.fm/" target="_blank">Framed</a>.</p>
                     </section>
 
 
@@ -211,6 +233,8 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 <!-- Google Analytics -->
